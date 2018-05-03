@@ -5,6 +5,9 @@
  */
 package aplicacaoescola.view;
 
+import aplicacaoescola.Interface.Portugues;
+
+
 /**
  *
  * @author laboratorio
@@ -15,7 +18,10 @@ public class AplicacaoEscola {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       ProfessorView prof= new ProfessorView(new Portugues());
+       prof.getMateriaaplicada().nomeMateria();
+       
+       
     }
     
 }
